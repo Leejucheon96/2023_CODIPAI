@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=7 python extract_topK_ROIs.py \
+--data_h5_dir /data3/CMCS/raw_data_20x/Codipai_patch256_ostu/ \
+--data_slide_dir /data3/CMCS/raw_data_20x/ \
+--csv_path /data3/CMCS/raw_data_20x/Codipai_patch256_ostu/process_list_autogen.csv \
+--patch_dir /data3/CMCS/raw_data_20x/Codipai_patch256_ostu/ \
+--feat_dir /data3/CMCS/raw_data_20x/Codipai_patch256_ostu/feats_ft_512/ \
+--batch_size 512 \
+--slide_ext .tiff \
+--topk_num 512 \
+--exp_code "clam_codipai_res50_512_vib" \
+--target_patch_size 512

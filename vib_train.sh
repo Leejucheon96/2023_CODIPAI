@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python train_stage1.py --exp_code 'clam_codipai_res50_512_vib' --vib
